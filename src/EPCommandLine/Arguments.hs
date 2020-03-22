@@ -1,4 +1,4 @@
-module CommandLine.Arguments (parse) where
+module EPCommandLine.Arguments (parse) where
 
 import Control.Applicative ((<|>), optional)
 import Control.Monad.Except (throwError)
@@ -14,7 +14,7 @@ import qualified Publish
 import qualified Elm.Compiler as Compiler
 import qualified Elm.Package as Package
 import qualified Elm.Package.Paths as Path
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 parse :: IO (Manager.Manager ())

@@ -19,9 +19,9 @@ import Text.PrettyPrint.ANSI.Leijen
 
 import qualified Elm.Package as Pkg
 import qualified Elm.Package.Paths as Path
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 import qualified Utils.Http as Http
 
 

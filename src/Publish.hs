@@ -5,7 +5,7 @@ import qualified Data.Maybe as Maybe
 
 import qualified Bump
 import qualified Catalog
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Docs
 import qualified Elm.Docs as Docs
 import qualified Elm.Package.Description as Desc
@@ -13,7 +13,7 @@ import qualified Elm.Package as Package
 import qualified Elm.Package.Paths as P
 import qualified GitHub
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 

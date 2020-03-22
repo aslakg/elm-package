@@ -9,7 +9,7 @@ import qualified Elm.Package.Paths as Path
 import qualified Elm.Package.Solution as S
 import qualified Install
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 

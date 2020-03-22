@@ -4,9 +4,9 @@ import System.Exit (exitFailure)
 import System.IO
 import GHC.IO.Encoding (setLocaleEncoding)
 
-import qualified CommandLine.Arguments as Arguments
+import qualified EPCommandLine.Arguments as Arguments
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 main :: IO ()

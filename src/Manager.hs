@@ -15,7 +15,7 @@ import qualified Network.HTTP.Client.TLS as Http
 import qualified System.Directory as Dir
 import System.FilePath ((</>))
 
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 type Manager =

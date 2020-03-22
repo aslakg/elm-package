@@ -6,12 +6,12 @@ import qualified Data.Aeson as Json
 import qualified Data.ByteString.Lazy.Char8 as BS
 
 import qualified Catalog
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Elm.Docs as Docs
 import qualified Elm.Package as Pkg
 import qualified Elm.Package.Paths as Path
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 

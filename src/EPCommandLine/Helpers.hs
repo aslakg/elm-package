@@ -1,4 +1,4 @@
-module CommandLine.Helpers where
+module EPCommandLine.Helpers where
 
 import Control.Monad.Except (liftIO, runExceptT, throwError)
 import System.Directory
@@ -6,7 +6,7 @@ import System.IO
 
 import qualified Elm.Utils as Utils
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 yesOrNo :: IO Bool

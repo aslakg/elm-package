@@ -10,7 +10,7 @@ import qualified Data.Vector as Vector
 import Network.HTTP.Client
 
 import qualified Elm.Package as Package
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 import qualified Manager
 import qualified Utils.Http as Http
 

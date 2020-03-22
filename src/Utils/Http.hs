@@ -9,7 +9,7 @@ import qualified Data.List as List
 import qualified Network.HTTP.Client as Http
 import qualified Network.HTTP.Types as Http
 
-import qualified Reporting.Error as Error
+import EPReporting.Error (Error(..), httpRequestFailed)
 import qualified Manager
 
 
@@ -32,7 +32,7 @@ sendSafe
   :: String
   -> Http.Manager
   -> (Http.Request -> Http.Manager -> IO a)
-  -> IO (Either Error.Error a)
+  -> IO (Either Error a)
 sendSafe url manager handler =
   sendUnsafe url manager handler
     `E.catch` handleHttpError url
@@ -50,7 +50,7 @@ sendUnsafe url manager handler =
       return (Right result)
 
 
-handleHttpError :: String -> Http.HttpException -> IO (Either Error.Error b)
+handleHttpError :: String -> Http.HttpException -> IO (Either Error b)
 handleHttpError url exception =
   -- case exception of
   --   Http.StatusCodeException (Http.Status _code err) headers ->
@@ -66,6 +66,6 @@ handleHttpError url exception =
       handleAnyError url exception
 
 
-handleAnyError :: (E.Exception e) => String -> e -> IO (Either Error.Error b)
+handleAnyError :: (E.Exception e) => String -> e -> IO (Either Error b)
 handleAnyError url exception =
-  return $ Left $ Error.HttpRequestFailed url (show exception)
+  return $ Left $ httpRequestFailed url (show exception)

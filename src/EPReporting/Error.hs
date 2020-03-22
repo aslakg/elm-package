@@ -1,10 +1,11 @@
 {-# OPTIONS_GHC -Wall #-}
-module Reporting.Error
+module EPReporting.Error
   ( Error(..)
   , Hint(..)
   , toString
   , toStderr
   , nearbyNames
+  , httpRequestFailed
   )
   where
 
@@ -57,7 +58,7 @@ data Error
   | InvalidBump Pkg.Version Pkg.Version
   | BadBump Pkg.Version Pkg.Version Diff.Magnitude Pkg.Version Diff.Magnitude
 
-
+httpRequestFailed = HttpRequestFailed
 
 -- BAD CONSTRAINT HINTS
 

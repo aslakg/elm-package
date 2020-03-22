@@ -43,7 +43,7 @@ Library
 
     other-modules:
         Catalog,
-        CommandLine.Helpers,
+        EPCommandLine.Helpers,
         Diff.Magnitude,
         Install,
         Install.Fetch,
@@ -51,7 +51,7 @@ Library
         Install.Solver,
         Manager,
         Paths_elm_package,
-        Reporting.Error,
+        EPReporting.Error,
         Store,
         Utils.Http
 
@@ -120,8 +120,8 @@ Library
 --     other-modules:
 --         Bump,
 --         Catalog,
---         CommandLine.Arguments,
---         CommandLine.Helpers,
+--         EPCommandLine.Arguments,
+--         EPCommandLine.Helpers,
 --         Diff,
 --         Diff.Compare,
 --         Diff.Display,
@@ -139,7 +139,7 @@ Library
 --         Install.Solver,
 --         Manager,
 --         Publish,
---         Reporting.Error,
+--         EPReporting.Error,
 --         Store,
 --         Utils.Http,
 --         Utils.Paths,

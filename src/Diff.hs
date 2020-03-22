@@ -3,7 +3,7 @@ module Diff where
 import Control.Monad.Except (throwError)
 
 import qualified Catalog
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Diff.Compare as Compare
 import qualified Diff.Display as Display
 import qualified Docs
@@ -12,7 +12,7 @@ import qualified Elm.Package.Description as Desc
 import qualified Elm.Package.Paths as Path
 import qualified Elm.Package as Package
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 data Range

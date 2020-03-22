@@ -4,7 +4,7 @@ import Control.Monad.Except (liftIO, throwError)
 import qualified Data.List as List
 
 import qualified Catalog
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Diff.Compare as Diff
 import qualified Diff.Magnitude as Diff
 import qualified Docs
@@ -13,7 +13,7 @@ import qualified Elm.Package.Description as Desc
 import qualified Elm.Package as Package
 import qualified Elm.Package.Paths as Path
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 bump :: Manager.Manager ()

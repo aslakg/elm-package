@@ -7,7 +7,7 @@ import qualified Data.Map as Map
 import System.Directory (createDirectoryIfMissing, doesFileExist, removeDirectoryRecursive)
 import System.FilePath ((</>))
 
-import qualified CommandLine.Helpers as Cmd
+import qualified EPCommandLine.Helpers as Cmd
 import qualified Elm.Package as Package
 import qualified Elm.Package.Constraint as Constraint
 import qualified Elm.Package.Description as Desc
@@ -17,7 +17,7 @@ import qualified Install.Fetch as Fetch
 import qualified Install.Plan as Plan
 import qualified Install.Solver as Solver
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 import qualified Store
 
 

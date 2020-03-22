@@ -15,7 +15,7 @@ import qualified Elm.Package.Constraint as C
 import qualified Elm.Package.Description as Desc
 import qualified Elm.Package as Package
 import qualified Manager
-import qualified Reporting.Error as Error
+import qualified EPReporting.Error as Error
 
 
 
